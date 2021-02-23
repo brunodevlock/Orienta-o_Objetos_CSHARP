@@ -2,7 +2,7 @@ using System;
 
 namespace OO.ContentContext
 {
-    public class Content
+    public abstract class Content
     {
 
         public Content()
