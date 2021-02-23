@@ -1,8 +1,15 @@
+using System;
+
 namespace OO.ContentContext
 {
     public class Content
     {
-        public int id { get; set; }
+
+        public Content()
+        {
+            Id = Guid.NewGuid();
+        }
+        public Guid Id { get; set; }
 
         public string Title { get; set; }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using OO.ContentContext;
 
 namespace OO
 {
@@ -7,6 +8,9 @@ namespace OO
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            //novo curso
+            var course = new Course();
         }
     }
 }
