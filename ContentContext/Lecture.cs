@@ -3,7 +3,7 @@ using OO.ContentContext.Enums;
 namespace OO.ContentContext {
 
 
-    public class Lecture
+    public class Lecture : Base
     {
         public int Ordem { get; set; }
 
