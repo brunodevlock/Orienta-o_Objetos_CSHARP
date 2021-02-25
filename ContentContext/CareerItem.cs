@@ -1,3 +1,5 @@
+using OO.NotificationContext;
+
 namespace OO.ContentContext
 {
 
@@ -7,7 +9,7 @@ namespace OO.ContentContext
         {
 
             if(course == null){
-                throw new System.Exception("O curso não pode ser nulo");
+                AddNotification(new Notification ("Course", "Curso inválido"));
             }
 
             Order = order;

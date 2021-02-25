@@ -1,0 +1,13 @@
+using OO.ContentContext;
+
+namespace OO.SubscriptionContext
+{
+    public class Plan : Base
+    {
+        public string Title { get; set; }
+
+        public decimal Price { get; set; }
+
+        
+    }
+}

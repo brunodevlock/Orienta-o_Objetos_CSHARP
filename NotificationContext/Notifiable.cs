@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace OO.NotificationContext 
 {
@@ -7,15 +8,22 @@ namespace OO.NotificationContext
     {
         public List<Notification> Notifications { get; set; }
 
-        public void Add(Notification notification)
+        public Notifiable()
+        {
+            Notifications = new List<Notification>();
+        }
+
+        public void AddNotification(Notification notification)
         {
             Notifications.Add(notification);
         }
 
-        public void AddRange(IEnumerable<Notification> notifications)
+        public void AddNotifications(IEnumerable<Notification> notifications)
         {
             Notifications.AddRange(notifications);
         }
+
+        public bool IsInValid => Notifications.Any();
 
 
     }
